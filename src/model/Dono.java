@@ -5,42 +5,48 @@ public class Dono {
     private String nomeDono;
     private String telefone;
 
-//atributos privados
+    // atributos privados
 
-public Dono(){
-    
-}
+    public Dono() {
 
-public Dono(int donoId, String nomeDono){
-    this.donoId = donoId;
-    this.nomeDono = nomeDono;
-}
-//contrutores
+    }
 
-public int getDonoId(){
-    return donoId;
-}
+    public Dono(int donoId, String nomeDono) {
+        this.donoId = donoId;
+        this.nomeDono = nomeDono;
+    }
+    // contrutores
 
-public void setDonoId(int donoId){
-    this.donoId = donoId;
-}
+    public int getDonoId() {
+        return donoId;
+    }
 
-public String nomeDono(){
-    return nomeDono;
-}
+    public void setDonoId(int donoId) {
+        this.donoId = donoId;
+    }
 
-public void setNome(String nomeDono){
-    this.nomeDono = nomeDono;
-}
+    public String nomeDono() {
+        return nomeDono;
+    }
 
-public String getTelefone(){
-    return telefone;
-}
+    public void setNome(String nomeDono) {
+        this.nomeDono = nomeDono;
+    }
 
-public void setTelefone(String telefone){
-    this.telefone = telefone;
-}
+    public String getTelefone() {
+        return telefone;
+    }
 
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
 
+    @Override
+    public String toString() {
+        return "Dono {" +
+                "Nome do dono = '" + nomeDono + '\'' +
+                ", Telefone = '" + telefone + '\'' +
+                '}';
+    }
 
 }

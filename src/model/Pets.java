@@ -6,11 +6,11 @@ public class Pets {
     private String nome;
     private String porte;
     private String raca;
-    
-    public Pets(){
+
+    public Pets() {
 
     }
-    
+
     // construtores
     public Pets(int id, String nome, String porte, String raca) {
         this.id = id;
@@ -51,5 +51,14 @@ public class Pets {
 
     public void setRaca(String raca) {
         this.raca = raca;
+    }
+
+    @Override
+    public String toString() {
+        return "Pet {" +
+                "Nome = '" + nome + '\'' +
+                ", Porte = '" + porte + '\'' +
+                ", Raça = '" + raca + '\'' +
+                '}';
     }
 }
