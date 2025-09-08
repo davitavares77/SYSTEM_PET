@@ -1,6 +1,6 @@
 package model;
 
-public class Pets{
+public class Pets {
     // atributos privados
     private int id;
     private String nome;
@@ -12,7 +12,7 @@ public class Pets{
     }
     
     // construtores
-    public Pets (int id, String nome, String porte, String raca) {
+    public Pets(int id, String nome, String porte, String raca) {
         this.id = id;
         this.nome = nome;
         this.porte = porte;
@@ -51,14 +51,5 @@ public class Pets{
 
     public void setRaca(String raca) {
         this.raca = raca;
-    }
-
-    @Override
-     public String toString() {
-        return "Pet {" +
-               "Nome = '" + nome + '\'' +
-               ", Porte = '" + porte + '\'' +
-               ", Raça = '" + raca + '\'' +
-               '}';
     }
 }

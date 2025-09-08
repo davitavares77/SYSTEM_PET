@@ -41,13 +41,6 @@ public void setTelefone(String telefone){
     this.telefone = telefone;
 }
 
- @Override
-     public String toString() {
-        return "Pet {" +
-               "Nome do dono = '" + nomeDono+ '\'' +
-               ", Telefone = '" + telefone + '\'' +
-               '}';
-     }
 
 
 }
